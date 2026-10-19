@@ -71,7 +71,7 @@
         <p>아이디어를 실제 경험으로<br>바꾼 작업들입니다.</p>
       </div>
       <div class="project-grid">
-        <article class="project-card project-card--violet">
+        <article class="project-card project-card--violet" tabindex="0" role="button" aria-haspopup="dialog" aria-controls="project-dialog" data-role="대시보드 화면 구조 설계 및 프론트엔드 구현" data-technologies="HTML, CSS, JavaScript" data-results="업무 현황을 한눈에 살펴볼 수 있도록 핵심 정보를 정리했습니다.">
           <div class="project-top"><span>01 / 03</span><span class="project-arrow">↗</span></div>
           <div class="project-visual visual-dashboard">
             <div class="dashboard-window">
@@ -80,38 +80,62 @@
             </div>
           </div>
           <div class="project-info">
-            <div><h3>Flowboard</h3><p>팀을 위한 업무 관리 플랫폼</p></div>
-            <span class="project-year">2024</span>
+            <div><h3>Lumio</h3><p>팀의 업무 현황을 한눈에 관리하는 대시보드</p></div>
+            <span class="project-year">예시</span>
           </div>
-          <div class="tags"><span>Product Design</span><span>Frontend</span></div>
+          <div class="tags"><span>Dashboard</span><span>Frontend</span></div>
         </article>
 
-        <article class="project-card project-card--mint">
+        <article class="project-card project-card--mint" tabindex="0" role="button" aria-haspopup="dialog" aria-controls="project-dialog" data-role="사용자 흐름 설계 및 모바일 화면 UI 구현" data-technologies="HTML, CSS, JavaScript" data-results="취향에 맞는 장소를 빠르게 탐색하고 저장할 수 있는 경험을 구성했습니다.">
           <div class="project-top"><span>02 / 03</span><span class="project-arrow">↗</span></div>
           <div class="project-visual visual-mobile">
             <div class="phone phone--back"></div>
             <div class="phone phone--front"><div class="phone-notch"></div><div class="phone-circle"></div><div class="phone-lines"><i></i><i></i><i></i></div></div>
           </div>
           <div class="project-info">
-            <div><h3>One Table</h3><p>취향 기반 식당 큐레이션 앱</p></div>
-            <span class="project-year">2023</span>
+            <div><h3>Mori</h3><p>취향에 맞는 공간을 발견하는 큐레이션 앱</p></div>
+            <span class="project-year">예시</span>
           </div>
-          <div class="tags"><span>UX Research</span><span>Mobile App</span></div>
+          <div class="tags"><span>UX Research</span><span>Mobile</span></div>
         </article>
 
-        <article class="project-card project-card--orange">
+        <article class="project-card project-card--orange" tabindex="0" role="button" aria-haspopup="dialog" aria-controls="project-dialog" data-role="브랜드 콘셉트 정리 및 스튜디오 웹사이트 디자인·구현" data-technologies="HTML, CSS, JavaScript" data-results="브랜드의 주요 메시지와 작업물을 명확하게 전달하는 소개 페이지를 구성했습니다.">
           <div class="project-top"><span>03 / 03</span><span class="project-arrow">↗</span></div>
           <div class="project-visual visual-type">
             <span class="type-small">MAKE IT</span><strong>BRIGHT<span>.</span></strong><span class="type-small type-small--right">BRAND 2022</span>
           </div>
           <div class="project-info">
-            <div><h3>Bright Studio</h3><p>크리에이티브 스튜디오 웹사이트</p></div>
-            <span class="project-year">2022</span>
+            <div><h3>OndoStudio</h3><p>브랜드와 작업물을 소개하는 크리에이티브 스튜디오 웹사이트</p></div>
+            <span class="project-year">예시</span>
           </div>
           <div class="tags"><span>Branding</span><span>Web Design</span></div>
         </article>
       </div>
     </section>
+
+    <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title" aria-describedby="project-dialog-description project-dialog-example-note">
+      <div class="project-dialog-header">
+        <p class="project-dialog-eyebrow">PROJECT DETAILS</p>
+        <button class="project-dialog-close" type="button" aria-label="상세 정보 닫기">×</button>
+      </div>
+      <h2 id="project-dialog-title"></h2>
+      <p class="project-dialog-description" id="project-dialog-description"></p>
+      <p class="project-dialog-example-note" id="project-dialog-example-note">프로젝트 설명과 상세 정보는 실제 정보가 아닌 이해를 돕기 위한 예시입니다.</p>
+      <dl class="project-details-list">
+        <div>
+          <dt>담당 역할</dt>
+          <dd id="project-dialog-role"></dd>
+        </div>
+        <div>
+          <dt>사용 기술</dt>
+          <dd id="project-dialog-technologies"></dd>
+        </div>
+        <div>
+          <dt>주요 성과</dt>
+          <dd id="project-dialog-results"></dd>
+        </div>
+      </dl>
+    </dialog>
 
     <section class="contact-section container reveal" id="contact">
       <div class="contact-card">
